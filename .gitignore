@@ -1,0 +1,13 @@
+/target
+/.settings
+/bin
+/.classpath
+/.project
+/ng
+/ng.exe
+/Makefile~
+/rnash
+*.o
+*.*~
+*~
+
