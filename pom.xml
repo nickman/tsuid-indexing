@@ -38,6 +38,7 @@ questions.
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jmh.version>1.11.1</jmh.version>
         <javac.target>1.7</javac.target>
+        <logback.version>1.0.6</logback.version>
         <chronicle-map.version>3.1.3-alpha</chronicle-map.version>
         <chronicle-queue.version>3.5.3</chronicle-queue.version>
         <guava.version>18.0</guava.version>
@@ -85,6 +86,19 @@ questions.
               <artifactId>chronicle</artifactId>
               <version>${chronicle-queue.version}</version>
             </dependency>
+
+             <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback.version}</version>
+              </dependency>
+
+              <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+              </dependency>
+
 
 			  
         
