@@ -36,9 +36,10 @@ questions.
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jmh.version>1.0-SNAPSHOT</jmh.version>
+        <jmh.version>1.11.1</jmh.version>
         <javac.target>1.7</javac.target>
-        <chronicle.version>3.1.3-alpha</chronicle.version>
+        <chronicle-map.version>3.1.3-alpha</chronicle-map.version>
+        <chronicle-queue.version>3.5.3</chronicle-queue.version>
         <guava.version>18.0</guava.version>
         <heliosutils.version>1.0-SNAPSHOT</heliosutils.version>     
         <uberjar.name>benchmarks</uberjar.name>
@@ -76,8 +77,15 @@ questions.
 				<dependency>                                   
 				  <groupId>net.openhft</groupId>
 				  <artifactId>chronicle-map</artifactId>
-				  <version>${chronicle.version}</version>
+				  <version>${chronicle-map.version}</version>
 				</dependency>
+
+            <dependency>
+              <groupId>net.openhft</groupId>
+              <artifactId>chronicle</artifactId>
+              <version>${chronicle-queue.version}</version>
+            </dependency>
+
 			  
         
     </dependencies>
@@ -141,7 +149,7 @@ questions.
                 </plugin>
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>2.7</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-site-plugin</artifactId>
